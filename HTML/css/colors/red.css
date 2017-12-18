@@ -1,8 +1,8 @@
 ::-moz-selection {
-    background: #D40436;
+    background: #56C271;
 }
 ::selection {
-	background: #D40436;
+	background: #56C271;
 }
 
 
@@ -31,14 +31,14 @@
 .cbp-l-filters-alignCenter .cbp-filter-counter,
 .cbp-l-filters-alignRight .cbp-filter-item:hover,
 .cbp-l-filters-alignCenter .cbp-filter-item:hover,
-.clients .client .logo-light, 
+.clients .client .logo-light,
 .clients .client a .logo-light,
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus,
 .home-signin .btn-primary-full:hover,
 .cbp-l-loadMore-button .cbp-l-loadMore-button-link:hover,
-.pager li>a:hover, .pager li>a:focus 
+.pager li>a:hover, .pager li>a:focus
 {
-	background: #D40436;
+	background: #56C271;
 }
 
 
@@ -57,14 +57,14 @@ figure figcaption a:hover,
 .nav > li > span:focus,
 .navbar-default .navbar-nav > li > a:hover,
 
-.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, 
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover, .navbar-default .navbar-nav>.open>a:focus,
-.navbar-default .navbar-nav>.active>a, 
-.navbar-default .navbar-nav>.active>a:hover, 
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus,
-.dropdown-menu > .active > a, 
-.dropdown-menu > .active > a:hover, 
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus,
 .portfolio-links a:hover,
 .portfolio-links .icon:hover,
@@ -84,7 +84,7 @@ footer #social-icons li a:hover,
 .breadcrumb>li+li:before,
 .contact-details-social li a:hover,
 .cbp-l-filters-dropdownList .cbp-filter-item-active,
-.member-list a:hover, 
+.member-list a:hover,
 .effects .img a:hover,
 .connected-icon a:hover h4,
 .connected-icon a:hover span,
@@ -94,13 +94,13 @@ footer #social-icons li a:hover,
 .section-links a:hover,
 .blog-post-title a:hover
  {
-	color: #D40436;
+	color: #56C271;
 }
 
 .cbp-l-filters-alignRight .cbp-filter-counter:before,
 .cbp-l-filters-alignCenter .cbp-filter-counter:before,
 .cbp-l-filters-button .cbp-filter-counter:before {
-	border-top: 4px solid #D40436;
+	border-top: 4px solid #56C271;
 }
 .btn-primary-full {
     box-shadow: 0 -3px rgba(0, 0, 0, 0.4) inset;
@@ -111,10 +111,10 @@ footer #social-icons li a:hover,
     background-color: rgba(212, 4, 54, 0.9);
 }
 .label-primary:after {
-    border-bottom-color: #D40436;
+    border-bottom-color: #56C271;
 }
 .mega-menu .dropdown-menu {
-    border-bottom: 2px solid #D40436;
+    border-bottom: 2px solid #56C271;
     border-top: none!important;
 }
 
@@ -122,11 +122,10 @@ footer #social-icons li a:hover,
 .btn-effect:focus,
 .btn-effect:active,
 .btn-effect:after {
-    background: #D40436;
+    background: #56C271;
 }
 .btn-effect:hover {
-    background: none; 
-    border-color: #D40436;
+    background: none;
+    border-color: #56C271;
     transition: all 0.4s;
 }
- 
