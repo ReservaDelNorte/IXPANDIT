@@ -1,426 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<!-- Meta Data -->
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Ixpandit</title>
-        <meta name="description" content="Today's fintech"/>
-        <meta name="keywords" content="HTML5, Bootstrap 3, CSS3, javascript, PHP, onepage, responsive, mobile"/>
-        <meta name="author" content="Vossen Design"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-       	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<head>
+	<!-- Meta Data -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ixpandit</title>
+	<meta name="description" content="Today's fintech"/>
+	<meta name="keywords" content="HTML5, Bootstrap 3, CSS3, javascript, PHP, onepage, responsive, mobile"/>
+	<meta name="author" content="Vossen Design"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-        <!-- Stlylesheet -->
-        <link href="css/style.css" rel="stylesheet" type="text/css" />
+	<!-- Stlylesheet -->
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
 
-        <!-- Skin Color -->
-        <link rel="stylesheet" href="css/colors/red.css" id="color-skins"/>
+	<!-- Skin Color -->
+	<link rel="stylesheet" href="css/colors/red.css" id="color-skins"/>
 
-	</head>
-	<body>
+</head>
+<body>
 
-        <!-- Start Preloader -->
-        <div id="preloader">
-            <div class="loader">
-                <img src="img/assets/preloader-logo.png" alt="Vossen">
-            </div>
-        </div>
-        <!-- End Preloader -->
+	<!-- Start Preloader -->
+	<div id="preloader">
+		<div class="loader">
+			<img src="img/assets/preloader-logo.png" alt="Vossen">
+		</div>
+	</div>
+	<!-- End Preloader -->
 
-        <!-- Start Header -->
-        <header>
-			<nav class="navbar navbar-default navbar-alt" role="navigation">
-				<div class="container">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+	<!-- Start Header -->
+	<header>
+		<nav class="navbar navbar-default navbar-alt" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-					    </button>
-                        <a class="navbar-brand to-top" rel="home" href="#">
-                        	<img src="img/assets/logo-white.png" alt="Vossen" class="logo-big">
-                            <img src="img/assets/logo-dark.png" alt="Vossen" class="logo-small">
-                        </a>
+					</button>
+					<a class="navbar-brand to-top" rel="home" href="#">
+						<img src="img/assets/logo-white.png" alt="Vossen" class="logo-big">
+						<img src="img/assets/logo-dark.png" alt="Vossen" class="logo-small">
+					</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="main-nav">
+					<ul class="nav navbar-nav  navbar-right">
+
+						<li><a class="to-top">Home</a></li>
+						<li class="to-section"><a href="#about">Nosotros</a></li>
+						<li class="to-section"><a href="#team">Productos</a></li>
+						<li class="to-section"><a href="#contact">Contacto</a></li>
+						<li><a class="social-icon" href="#"><i class="icon icon-social-twitter"></i></a></li>
+						<li><a class="social-icon" href="#"><i class="icon icon-social-facebook"></i></a></li>
+						<li><a class="social-icon" href="#"><i class="icon icon-support"></i></a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+	</header>
+	<!-- End Header -->
+
+	<!-- Start Home Revolution Slider Parallax Section -->
+	<section id="home-revolution-slider">
+		<div class="hero">
+			<div class="tp-banner-container">
+				<div class="tp-banner video-background">
+					<ul class="video-foreground">
+						<li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-thumb="img/backgrounds/bg-home-fullscreen.mp4" data-delay="10000"  data-saveperformance="on" data-title="">
+							<video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="50"/>
+							<source src="img/backgrounds/bg-home-fullscreen.mp4" type="video/mp4" />
+						</video/>
+						<div class="tp-caption sft"
+						data-x="center"
+						data-y="260"
+						data-speed="1200"
+						data-start="1100"
+						data-easing="Power3.easeInOut"
+						data-splitin="none"
+						data-splitout="none"
+						data-elementdelay="0.1"
+						data-endelementdelay="0.1"
+						data-endspeed="300"
+						style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
+						<h2 class="home-heading op-1">Today’s Fintech</h2>
+					</div>
+					<!-- Home Subheading -->
+					<div class="tp-caption home-subheading sft "
+					data-x="center"
+					data-y="360"
+					data-speed="1200"
+					data-start="1350"
+					data-easing="Power3.easeInOut"
+					data-splitin="none"
+					data-splitout="none"
+					data-elementdelay="0.1"
+					data-endelementdelay="0.1"
+					data-endspeed="300"
+					style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
+					<div class="op-1">GENERAMOS SOLUCIONES DE FINTECH</div>
+				</div>
+				<!-- Home Button -->
+				<div class="tp-caption home-button sft fadeout"
+				data-x="center"
+				data-y="400"
+				data-speed="1200"
+				data-start="1550"
+				data-easing="Power3.easeInOut"
+				data-splitin="none"
+				data-splitout="none"
+				data-elementdelay="0.1"
+				data-endelementdelay="0.1"
+				data-endspeed="300"
+				style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
+				<div class="op-1"><a href="#contact" class="btn btn-primary btn-scroll">Contactar</a></div>
+			</div>
+
+		</li>
+	</ul>
+	<div class="tp-bannertimer"></div>
+</div>
+
+<div class="home-bottom">
+	<div class="container text-center">
+		<div class="move bounce">
+			<a href="#features" class="ion-ios-arrow-down btn-scroll"></a>
+		</div>
+	</div>
+</div>
+
+</div>
+</div>
+</section>
+<!-- End Home Revolution Slider Parallax Section -->
+<div class="site-wrapper content">
+	<!-- Start About Section -->
+	<section id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 text-left about-text">
+					<h2 class="content-title wow fadeInUp">Sobre nosotros</h2>
+					<p class="grey wow fadeInUp">Somos una aceleradora Fintech dedicada a generar soluciones financieras tecnológicas inmediatas.
+						En Ixpandit nos adaptamos constantemente a las nuevas tecnologías, innovando para ofrecer productos de alta competitividad.</br>
+						IXPANDIT ES TECNOLOGIA; consolidamos nuestra presencia en el mercado financiero mediante el uso y la optimización de variables no tradicionales  + inteligencia artificial,</br>
+						VELOCIDAD; generar productos capaces de dar respuestas inmediatas es nuestra prioridad,</br>
+						INNOVACION; mejoraremos la oferta desde la creatividad y el trabajo a medida de cada mercado que identificamos.</br>
+						(Acordate que en productos va breve descripción (ideal al pasar el cursor)).</p>
 					</div>
 
-					<!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="main-nav">
-                        <ul class="nav navbar-nav  navbar-right">
+					<div class="col-md-6 wow fadeInUp">
+						<div class="video-container">
+							<iframe src="http://player.vimeo.com/video/115919099?title=0&amp;byline=0&amp;portrait=0&amp;color=fff" allowfullscreen></iframe>
+						</div>
+					</div>
 
-                            <li><a class="to-top">Home</a></li>
-                            <li class="to-section"><a href="#about">Nosotros</a></li>
-                            <li class="to-section"><a href="#team">Productos</a></li>
-                            <li class="to-section"><a href="#contact">Contacto</a></li>
-                            <li><a class="social-icon" href="#"><i class="icon icon-social-twitter"></i></a></li>
-                            <li><a class="social-icon" href="#"><i class="icon icon-social-facebook"></i></a></li>
-                            <li><a class="social-icon" href="#"><i class="icon icon-support"></i></a></li>
-                      </ul>
-                    </div><!-- /.navbar-collapse -->
-				</div><!-- /.container -->
-			</nav>
-		</header>
-        <!-- End Header -->
-
-        <!-- Start Home Revolution Slider Parallax Section -->
-        <section id="home-revolution-slider">
-            <div class="hero">
-                <div class="tp-banner-container">
-                    <div class="tp-banner">
-                        <ul>
-                            <!-- SLIDE 1 -->
-                            <li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-thumb="img/backgrounds/bg-home-fullscreen.gif" data-delay="10000"  data-saveperformance="on" data-title="We Are Vossen">
-                                <img src="img/backgrounds/bg-home-fullscreen.gif" alt="slidebg1" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
-
-                                    <!-- Home Heading -->
-                                    <div class="tp-caption sft"
-                                        data-x="center"
-                                        data-y="260"
-                                        data-speed="1200"
-                                        data-start="1100"
-                                        data-easing="Power3.easeInOut"
-                                        data-splitin="none"
-                                        data-splitout="none"
-                                        data-elementdelay="0.1"
-                                        data-endelementdelay="0.1"
-                                        data-endspeed="300"
-                                        style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
-                                        <h2 class="home-heading op-1">Today’s Fintech</h2>
-                                    </div>
-                                    <!-- Home Subheading -->
-                                    <div class="tp-caption home-subheading sft "
-                                        data-x="center"
-                                        data-y="360"
-                                        data-speed="1200"
-                                        data-start="1350"
-                                        data-easing="Power3.easeInOut"
-                                        data-splitin="none"
-                                        data-splitout="none"
-                                        data-elementdelay="0.1"
-                                        data-endelementdelay="0.1"
-                                        data-endspeed="300"
-                                        style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
-                                        <div class="op-1">GENERAMOS SOLUCIONES DE FINTECH</div>
-                                    </div>
-                                    <!-- Home Button -->
-                                    <div class="tp-caption home-button sft fadeout"
-                                        data-x="center"
-                                        data-y="400"
-                                        data-speed="1200"
-                                        data-start="1550"
-                                        data-easing="Power3.easeInOut"
-                                        data-splitin="none"
-                                        data-splitout="none"
-                                        data-elementdelay="0.1"
-                                        data-endelementdelay="0.1"
-                                        data-endspeed="300"
-                                        style="z-index: 4; max-width: auto; max-height: auto; white-space:normal;">
-                                        <div class="op-1"><a href="#contact" class="btn btn-primary btn-scroll">Contactar</a></div>
-                                    </div>
-
-                            </li>
-                        </ul>
-                        <div class="tp-bannertimer"></div>
-                    </div>
-
-                    <div class="home-bottom">
-                        <div class="container text-center">
-                            <div class="move bounce">
-                                <a href="#features" class="ion-ios-arrow-down btn-scroll"></a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- End Home Revolution Slider Parallax Section -->
-        <div class="site-wrapper content">
-            <!-- Start About Section -->
-            <section id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 text-left about-text">
-                            <h2 class="content-title wow fadeInUp">Sobre nosotros</h2>
-                            <p class="grey wow fadeInUp">Somos una aceleradora Fintech dedicada a generar soluciones financieras tecnológicas inmediatas.
-En Ixpandit nos adaptamos constantemente a las nuevas tecnologías, innovando para ofrecer productos de alta competitividad.</br>
-IXPANDIT ES TECNOLOGIA; consolidamos nuestra presencia en el mercado financiero mediante el uso y la optimización de variables no tradicionales  + inteligencia artificial,</br>
-VELOCIDAD; generar productos capaces de dar respuestas inmediatas es nuestra prioridad,</br>
-INNOVACION; mejoraremos la oferta desde la creatividad y el trabajo a medida de cada mercado que identificamos.</br>
-(Acordate que en productos va breve descripción (ideal al pasar el cursor)).</p>
-                        </div>
-
-                        <div class="col-md-6 wow fadeInUp">
-                            <div class="video-container">
-                                <iframe src="http://player.vimeo.com/video/115919099?title=0&amp;byline=0&amp;portrait=0&amp;color=fff" allowfullscreen></iframe>
-                            </div>
-                        </div>
-
-                	</div>
-                </div>
-            </section>
-        	<!-- End About Section -->
-					<!-- Start Skills Section -->
-					<section id="skills" class="parallax-section-2">
-							<div class="container">
-									<div class="row">
-											<div class="col-md-6 col-sm-12 skills-row">
-													<h4 class="content-title white wow fadeInUp">nuestros Skills</h4>
-													<p class="p-info white wow fadeInUp">Excelencia: Es nuestro objetivo de mínima, y la única forma de sobresalir en un mercado hipercompetitivo.</p>
-													<p class="p-info white wow fadeInUp">Perseverancia: Creemos en el trabajo a largo plazo, superando distintos obstáculos para llegar al objetivo propuesto.</p>
-													<p class="p-info white wow fadeInUp">Data driven: Tomamos decisiones en base al conocimiento profundo de nuestro mercado y del comportamiento de las personas.</p>
-													<p class="p-info white wow fadeInUp">Centrado en el usuario: Trabajamos para los distintas necesidades de nuestros clientes, buscando mejorar soluciones para los clientes.</p>
-													<p class="p-info white wow fadeInUp">Innovación: Nuestras soluciones deben estar a la altura de las demandas, por eso debemos adelantarnos e interpretar las actuales y potenciales necesidades del mercado.</p>
-											</div>
-
-											<div class="col-md-6 col-sm-12 wow fadeInUp">
-													<div class="progress-bars">
-							<p>Branding</p>
-							<div class="progress" data-percent="85%">
-								<div class="progress-bar">
-									<span class="progress-bar-tooltip">85%</span>
-								</div>
+				</div>
+			</div>
+		</section>
+		<!-- End About Section -->
+		<!-- Start Skills Section -->
+		<section id="skills" class="parallax-section-2">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-12">
+							<div class="board">
+								<ul>
+									<li class="board-content"><a href=""><h2 class="highlight"><div class="check"></div> TECNOLOGÍA</h2></a></li>
+									<li class="board-content"><a href=""><h2 class="highlight"><div class="check"></div> VELOCIDAD</h2></a></li>
+									<li class="board-content"><a href=""><h2 class="highlight"><div class="check"></div> INNOVACIÓN</h2></a></li>
+								</ul>
 							</div>
-							<p>User Experience</p>
-							<div class="progress" data-percent="100%">
-								<div class="progress-bar progress-bar-primary">
-									<span class="progress-bar-tooltip">100%</span>
-								</div>
-							</div>
-							<p>Web Design</p>
-							<div class="progress" data-percent="70%">
-								<div class="progress-bar progress-bar-primary">
-									<span class="progress-bar-tooltip">70%</span>
-								</div>
-							</div>
-							<p>Fun</p>
-							<div class="progress" data-percent="82%">
-								<div class="progress-bar progress-bar-primary">
-									<span class="progress-bar-tooltip">82%</span>
-								</div>
-							</div>
-															<p>Visual Design</p>
-							<div class="progress" data-percent="94%">
-								<div class="progress-bar progress-bar-primary">
-									<span class="progress-bar-tooltip">94%</span>
-								</div>
+					</div>
+					<div class="col-md-6 col-sm-12 skills-row">
+						<h4 class="content-title white wow fadeInUp">nuestros Skills</h4>
+						<p class="p-info white wow fadeInUp">Excelencia: Es nuestro objetivo de mínima, y la única forma de sobresalir en un mercado hipercompetitivo.</p>
+						<p class="p-info white wow fadeInUp">Perseverancia: Creemos en el trabajo a largo plazo, superando distintos obstáculos para llegar al objetivo propuesto.</p>
+						<p class="p-info white wow fadeInUp">Data driven: Tomamos decisiones en base al conocimiento profundo de nuestro mercado y del comportamiento de las personas.</p>
+						<p class="p-info white wow fadeInUp">Centrado en el usuario: Trabajamos para los distintas necesidades de nuestros clientes, buscando mejorar soluciones para los clientes.</p>
+						<p class="p-info white wow fadeInUp">Innovación: Nuestras soluciones deben estar a la altura de las demandas, por eso debemos adelantarnos e interpretar las actuales y potenciales necesidades del mercado.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Skills Section -->
+		<!-- Start About Section -->
+		<section id="about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 text-left about-text">
+						<h2 class="content-title wow fadeInUp">Somos internacionales</h2>
+						<p class="grey wow fadeInUp">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+
+						<div class="col-md-6 wow fadeInUp">
+							<div class="international">
 							</div>
 						</div>
+
+					</div>
+				</div>
+			</section>
+			<!-- End About Section -->
+		<!-- Start Fun Facts Section -->
+		<section id="fun-facts">
+			<div class="container">
+
+				<div class="counter-row row text-center wow fadeInUp">
+					<div class="col-md-6 col-sm-12 fact-container">
+						<div class="fact">
+							<span class="counter highlight">50000</span>
+							<h4>Créditos otorgados</h4>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-12 fact-container">
+						<div class="fact">
+							<span class="counter highlight">80 </span><h2 class="highlight">, Millones</h2>
+							<h4>USD otorgados</h4>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- End Fun Facts Section -->
+		<!-- Start Testimonials Section -->
+		<section id="testimonials" class="parallax-section-7">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-12 text-center">
+						<h3 class="section-title white wow fadeInUp">Nuestros Productos</h3>
+					</div>
+
+					<div class="col-md-12 text-center wow fadeInUp">
+						<div id="owl-testimonials" class="owl-carousel">
+
+							<div>
+								<div class="testimonial">
+								</div>
+								<div class="testimonial-name">
+									<a href="http://mercadopresta.com" target="_blank">
+										<img src="img/clients/client-1.png" alt="client">
+										<h4 class="white">MERCADOPRESTA:</h4>
+										Financiamiento PYMES</a>
+									</div>
+								</div>
+
+								<div>
+									<div class="testimonial">
+									</div>
+									<div class="testimonial-name">
+										<a href="http://adelantosya.com" target="_blank">
+											<img src="img/clients/client-2.png" alt="client">
+											<h4 class="white">ADELANTOSYA:</h4>
+											Adelantos sobre salarios</a>
+										</div>
+									</div>
+
+									<div>
+										<div class="testimonial">
+										</div>
+										<div class="testimonial-name">
+											<a href="http://creditosenelacto.com" target="_blank">
+												<img src="img/clients/client-3.png" alt="client">
+												<h4 class="white">CREDITOSENELACTO:</h4>
+												Creditos al consumo</a>
 											</div>
+										</div>
 
 									</div>
-							</div>
-					</section>
-					<!-- End Skills Section -->
-					<!-- Start Fun Facts Section -->
-					<section id="fun-facts">
-						<div class="container">
-
-								<div class="counter-row row text-center wow fadeInUp">
-										<div class="col-md-6 col-sm-12 fact-container">
-												<div class="fact">
-														<span class="counter highlight">50000</span>
-															<h4>Créditos otorgados</h4>
-													</div>
-											</div>
-											<div class="col-md-6 col-sm-12 fact-container">
-												<div class="fact">
-														<span class="counter highlight">80 </span><h2 class="highlight">, Millones</h2>
-															<h4>USD otorgados</h4>
-													</div>
-											</div>
-									</div>
+								</div>
 
 							</div>
-					</section>
-					<!-- End Fun Facts Section -->
-					<!-- Start Testimonials Section -->
-					<section id="testimonials" class="parallax-section-7">
-							<div class="container">
-									<div class="row">
-
-											<div class="col-md-12 text-center">
-													<h3 class="section-title white wow fadeInUp">Nuestros Productos</h3>
-											</div>
-
-											<div class="col-md-12 text-center wow fadeInUp">
-													<div id="owl-testimonials" class="owl-carousel">
-
-															<div>
-																	<div class="testimonial">
-																	</div>
-																	<div class="testimonial-name">
-																		<a href="http://mercadopresta.com" target="_blank">
-																			<img src="img/clients/client-1.png" alt="client">
-																			<h4 class="white">MERCADOPRESTA:</h4>
-																			Financiamiento PYMES</a>
-																	</div>
-															</div>
-
-															<div>
-																	<div class="testimonial">
-																	</div>
-																	<div class="testimonial-name">
-																		<a href="http://adelantosya.com" target="_blank">
-																			<img src="img/clients/client-2.png" alt="client">
-																			<h4 class="white">ADELANTOSYA:</h4>
-																			Adelantos sobre salarios</a>
-																	</div>
-															</div>
-
-															<div>
-																	<div class="testimonial">
-																	</div>
-																	<div class="testimonial-name">
-																		<a href="http://creditosenelacto.com" target="_blank">
-																			<img src="img/clients/client-3.png" alt="client">
-																			<h4 class="white">CREDITOSENELACTO:</h4>
-																			Creditos al consumo</a>
-																	</div>
-															</div>
-
-													</div>
-											</div>
-
-									</div>
-							</div>
+						</div>
 					</section>
 					<!-- End Testimonials Section -->
-					<!-- Start Google Map Section -->
-					<div id="map"></div>
-					<!-- End Google Map Section -->
-            <!-- Start Contact Form Section -->
-            <section id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h2 class="section-title wow fadeInUp">contactanos</h2>
-                        </div>
+					<!-- Start Contact Form Section -->
+					<section id="contact">
+						<div class="container">
+							<div class="row">
+								<div class="col-md-12">
+									<h2 class="section-title wow fadeInUp">contactanos</h2>
+								</div>
 
-                        <div class="col-md-6 col-md-offset-3 text-center wow fadeInUp">
-                            <div id="message"></div>
-                            <!-- Contact Form will be functional only on your server. Upload to your server when testing. -->
-                            <form method="post" action="php/contact-form.php" name="contactform" id="contactform">
-                                <fieldset>
-                                        <input name="name" type="text" id="name" placeholder="Nombre"/>
-                                        <input name="email" type="text" id="email" placeholder="Email"/>
-                                </fieldset>
-                                <fieldset>
-                                        <textarea name="comments" cols="40" rows="3" id="comments" placeholder="Mensaje"></textarea>
-                                </fieldset>
-                                <input type="submit" class="submit" id="submit" value="Enviar Mensaje" />
-                            </form>
-                        </div>
+								<div class="col-md-6 col-md-offset-3 text-center wow fadeInUp">
+									<div id="message"></div>
+									<!-- Contact Form will be functional only on your server. Upload to your server when testing. -->
+									<form method="post" action="php/contact-form.php" name="contactform" id="contactform">
+										<fieldset>
+											<input name="name" type="text" id="name" placeholder="Nombre"/>
+											<input name="email" type="text" id="email" placeholder="Email"/>
+										</fieldset>
+										<fieldset>
+											<textarea name="comments" cols="40" rows="3" id="comments" placeholder="Mensaje"></textarea>
+										</fieldset>
+										<input type="submit" class="submit" id="submit" value="Enviar Mensaje" />
+									</form>
+								</div>
 
-                        <div class="col-md-12 text-center wow fadeInUp" style="margin-top:20px;">
-                            <p>Nos encantaría saber de usted, así que ¡póngase en contacto!</p>
-                            <h4>Contactanos todos los días</h4>
-                            <p>Dirección<br> País<br>(555) 121-0199</p>
-                        </div>
+								<div class="col-md-12 text-center wow fadeInUp" style="margin-top:20px;">
+									<p>Nos encantaría saber de usted, así que ¡póngase en contacto!</p>
+									<h4>Contactanos todos los días</h4>
+									<p>Dirección<br> País<br>(555) 121-0199</p>
+								</div>
 
-                    </div>
-                </div>
-            </section>
-            <!-- End Contact Form Section -->
-            <!-- Start Footer 1 -->
-            <footer id="footer">
-                <div class="footer-widgets">
-                    <div class="container">
-
-                            <div class="col-md-3 col-sm-6 col-twitter">
-                                <h4>Último Tweet</h4>
-                                <div class="tweet"></div>
-                            </div>
-
-                            <div class="col-md-3 col-sm-6 col-footer">
-                                <div class="subscription">
-                                    <h4>Newsletter</h4>
-                                    <p>¡Suscríbete para recibir nuevas ideas, inspiración y nuestras noticias semanales!</p>
-
-                                    <form action="php/subscribe-mailchimp.php" method="post" id="subscribe-form" role="form">
-                                        <div class="form-validation alert"></div>
-                                        <div class="form-group subscribe-form-input">
-                                            <input type="email" name="email" id="subscribe-form-email" class="footer-subscribe-input" placeholder="Escribe tu dirección de email" autocomplete="off" />
-                                            <button class="subscribe-form-submit btn-primary-full" data-loading-text="Loading...">Suscribite</button>
-                                        </div>
-                                    </form>
-
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 col-sm-6 col-footer">
-                                <div class="contact">
-                                    <h4>Visítanos hoy!</h4>
-                                    <ul class="contact-details">
-                                        <li><p><i class="icon ion-ios-location-outline highlight"></i>Lorem ipsum dolor sit amet.</p></li>
-                                        <li><p><i class="icon ion-ios-telephone highlight"></i> (123) 456-7891</p></li>
-                                        <li><p><i class="icon ion-android-mail highlight"></i> <a href="vossendesign@gmail.com">contacto@ixpandit.com</a></p></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3 col-sm-6 col-footer">
-                                <h4>Sobre Ixpandit</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in euismod nisi.</p>
-                            </div>
-
-                    </div>
-                </div><!-- End Footer Widgets -->
-
-				<div class="footer-copyright">
-					<div class="container">
-						<div class="row">
-
-							<div class="col-md-6 col-sm-12">
-								<p>© 2018 Ixpandit<a href="index.html" class="logo"></a></p>
-							</div>
-							<div class="col-md-6 col-sm-12">
-				                <ul id="social-icons">
-						            <li><a href="#"><i class="icon ion-social-twitter"></i></a></li>
-                                    <li><a href="#"><i class="icon ion-social-facebook"></i></a></li>
-                                    <li><a href="#"><i class="icon ion-social-googleplus"></i></a></li>
-                                    <li><a href="#"><i class="icon ion-social-instagram-outline"></i></a></li>
-                                    <li><a href="#"><i class="icon ion-social-pinterest"></i></a></li>
-                                    <li><a href="#"><i class="icon ion-social-skype"></i></a></li>
-                                    <li><a href="#"><i class="icon ion-social-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="icon ion-social-dropbox"></i></a></li>
-                                    <li><a href="#"><i class="icon ion-social-vimeo"></i></a></li>
-                                    <li><a href="#"><i class="icon ion-social-youtube"></i></a></li>
-                                </ul>
 							</div>
 						</div>
-					</div>
-				</div><!-- End Footer Copyright -->
+					</section>
+					<!-- End Contact Form Section -->
+					<!-- Start Footer 1 -->
+					<footer id="footer">
+						<div class="footer-widgets">
+							<div class="container">
 
-			</footer>
-            <!-- End Footer 1 -->
+								<div class="col-md-3 col-sm-6 col-twitter">
+									<h4>Último Tweet</h4>
+									<div class="tweet"></div>
+								</div>
 
-            <!-- Start Back To Top -->
-            <a id="back-to-top"><i class="icon ion-chevron-up"></i></a>
-            <!-- End Back To Top -->
+								<div class="col-md-3 col-sm-6 col-footer">
+									<div class="subscription">
+										<h4>Newsletter</h4>
+										<p>¡Suscríbete para recibir nuevas ideas, inspiración y nuestras noticias semanales!</p>
 
-        </div> <!-- End Site Wrapper -->
+										<form action="php/subscribe-mailchimp.php" method="post" id="subscribe-form" role="form">
+											<div class="form-validation alert"></div>
+											<div class="form-group subscribe-form-input">
+												<input type="email" name="email" id="subscribe-form-email" class="footer-subscribe-input" placeholder="Escribe tu dirección de email" autocomplete="off" />
+												<button class="subscribe-form-submit btn-primary-full" data-loading-text="Loading...">Suscribite</button>
+											</div>
+										</form>
 
-        <!-- jQuery -->
-        <script src="js/plugins/jquery.min.js"></script>
-        <script src="js/plugins/moderniz.min.js"></script>
-        <script src="js/plugins/smoothscroll.min.js"></script>
-        <script src="js/plugins/revslider.min.js"></script>
-        <script src="js/plugins/bootstrap.min.js"></script>
-        <script src="js/plugins/waypoints.min.js"></script>
-        <script src="js/plugins/parallax.min.js"></script>
-        <script src="js/plugins/easign1.3.min.js"></script>
-        <script src="js/plugins/cubeportfolio.min.js"></script>
-        <script src="js/plugins/owlcarousel.min.js"></script>
-        <script src="js/plugins/tweetie.min.js"></script>
-        <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-        <script src="js/plugins/gmap3.min.js"></script>
-        <script src="js/plugins/wow.min.js"></script>
-        <script src="js/plugins/counterup.min.js"></script>
-		<script src="js/scripts.js"></script>
+									</div>
+								</div>
 
-	</body>
-</html>
+								<div class="col-md-3 col-sm-6 col-footer">
+									<div class="contact">
+										<h4>Visítanos hoy!</h4>
+										<ul class="contact-details">
+											<li><p><i class="icon ion-ios-location-outline highlight"></i>Lorem ipsum dolor sit amet.</p></li>
+											<li><p><i class="icon ion-ios-telephone highlight"></i> (123) 456-7891</p></li>
+											<li><p><i class="icon ion-android-mail highlight"></i> <a href="vossendesign@gmail.com">contacto@ixpandit.com</a></p></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="col-md-3 col-sm-6 col-footer">
+									<h4>Sobre Ixpandit</h4>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in euismod nisi.</p>
+								</div>
+
+							</div>
+						</div><!-- End Footer Widgets -->
+
+						<div class="footer-copyright">
+							<div class="container">
+								<div class="row">
+
+									<div class="col-md-6 col-sm-12">
+										<p>© 2018 Ixpandit<a href="index.html" class="logo"></a></p>
+									</div>
+									<div class="col-md-6 col-sm-12">
+										<ul id="social-icons">
+											<li><a href="#"><i class="icon ion-social-twitter"></i></a></li>
+											<li><a href="#"><i class="icon ion-social-facebook"></i></a></li>
+											<li><a href="#"><i class="icon ion-social-googleplus"></i></a></li>
+											<li><a href="#"><i class="icon ion-social-instagram-outline"></i></a></li>
+											<li><a href="#"><i class="icon ion-social-pinterest"></i></a></li>
+											<li><a href="#"><i class="icon ion-social-skype"></i></a></li>
+											<li><a href="#"><i class="icon ion-social-linkedin"></i></a></li>
+											<li><a href="#"><i class="icon ion-social-dropbox"></i></a></li>
+											<li><a href="#"><i class="icon ion-social-vimeo"></i></a></li>
+											<li><a href="#"><i class="icon ion-social-youtube"></i></a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div><!-- End Footer Copyright -->
+
+					</footer>
+					<!-- End Footer 1 -->
+
+					<!-- Start Back To Top -->
+					<a id="back-to-top"><i class="icon ion-chevron-up"></i></a>
+					<!-- End Back To Top -->
+
+				</div> <!-- End Site Wrapper -->
+
+				<!-- jQuery -->
+				<script src="js/plugins/jquery.min.js"></script>
+				<script src="js/plugins/moderniz.min.js"></script>
+				<script src="js/plugins/smoothscroll.min.js"></script>
+				<script src="js/plugins/revslider.min.js"></script>
+				<script src="js/plugins/bootstrap.min.js"></script>
+				<script src="js/plugins/waypoints.min.js"></script>
+				<script src="js/plugins/parallax.min.js"></script>
+				<script src="js/plugins/easign1.3.min.js"></script>
+				<script src="js/plugins/cubeportfolio.min.js"></script>
+				<script src="js/plugins/owlcarousel.min.js"></script>
+				<script src="js/plugins/tweetie.min.js"></script>
+				<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+				<script src="js/plugins/gmap3.min.js"></script>
+				<script src="js/plugins/wow.min.js"></script>
+				<script src="js/plugins/counterup.min.js"></script>
+				<script src="js/scripts.js"></script>
+
+			</body>
+			</html>
