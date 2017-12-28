@@ -125,33 +125,7 @@
 		---------------------*/
 		new WOW().init();
 	}
-	/* -------------------
-	Google map
-	---------------------*/
-	$("#map").gmap3({
-		marker:{
-		address:"44 W 66th St, New York, NY",
-		options:{ icon: "img/assets/marker.png"}},
-		map:{
-		options:{
-		styles: [ {
-		stylers: [ { "saturation":-90 }, { "lightness": 0 }, { "gamma": 0.0 }]},
-		],
-		zoom: 13,
-		scrollwheel:false,
-		draggable: true }
-		}
-	});
-	/* -------------------
-	Twitter Feed
-	---------------------*/
-	$('.tweet').twittie({
-		username: 'VossenDesign',
-		dateFormat: '%b. %d, %Y',
-		template: '{{tweet}} <div class="date">{{date}}</div>',
-		count: 2,
-		hideReplies: true
-	});
+
 	/* -------------------
 	Animated progress bars
 	---------------------*/
