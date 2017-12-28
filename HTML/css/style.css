@@ -1229,8 +1229,8 @@ nav {
 }
 .international{
 	background-image: url("../img/backgrounds/maps.png");
-	width: 750px;
-	height: 500px;
+	width: 525px;
+	height: 350px;
 	background-position: left;
 }
 /*----- Team -----*/
@@ -2275,12 +2275,6 @@ border-bottom:1px dotted #ccc;
 }
 .contact-details-social li a {
 	color: #7a7a7a;
-}
-
-/*----- Google maps -----*/
-#map {
-	height:480px;
-	width:100%;
 }
 
 /*----- Video Popup Section -----*/
