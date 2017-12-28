@@ -1209,8 +1209,8 @@ nav {
 }
 .board{
 	background-image: url("../img/backgrounds/board.png");
-	width: 500px;
-	height: 400px;
+	width: 401px;
+	height: 361px;
 	background-size: cover;
 	background-position: center;
 	z-index: 1;
