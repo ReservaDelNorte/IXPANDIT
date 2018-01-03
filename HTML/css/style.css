@@ -1212,7 +1212,8 @@ nav {
 	width: 401px;
 	height: 361px;
 	background-size: cover;
-	background-position: center;
+	background-
+	position: center;
 	z-index: 1;
 }
 .board-content{
@@ -1233,6 +1234,12 @@ nav {
 	height: 269px;
 	background-position: left;
 	background-size: cover;
+}
+
+@media (max-width: 992px) {
+	.international {
+		display: none;
+	}
 }
 
 @media (max-width: 992px) {
