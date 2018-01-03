@@ -3870,3 +3870,15 @@ img {
 .highlight{
 	display: inline;
 }
+@media (max-width: 992px) {
+	video {
+		display: none;
+	}
+}
+@media (max-width: 992px) {
+	.video-background {
+		background-image: url("../img/backgrounds/cielo.png");
+		background-position: center;
+		background-size: auto;
+	}
+}
