@@ -1229,10 +1229,19 @@ nav {
 }
 .international{
 	background-image: url("../img/backgrounds/maps.png");
-	width: 750px;
-	height: 500px;
+	width: 457px;
+	height: 269px;
 	background-position: left;
+	background-size: cover;
 }
+
+@media (max-width: 992px) {
+	.international {
+		display: none;
+	}
+}
+
+
 /*----- Team -----*/
 #team {
 	padding-top: 80px;
@@ -1740,17 +1749,6 @@ blockquote strong {
 .project-widget p {
 	color: #7a7a7a!important;
 }
-/*
-.cbp-l-grid-fullScreen {
-	visibility: visible;
-	overflow: visible;
-}
-@media (min-width:992px) {
-	.cbp-l-grid-fullScreen {
-		margin-top: 200px;
-	}
-}
-*/
 
 /*----- Get Connected -----*/
 #get-connected {
@@ -2275,12 +2273,6 @@ border-bottom:1px dotted #ccc;
 }
 .contact-details-social li a {
 	color: #7a7a7a;
-}
-
-/*----- Google maps -----*/
-#map {
-	height:480px;
-	width:100%;
 }
 
 /*----- Video Popup Section -----*/
