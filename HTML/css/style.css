@@ -1220,14 +1220,23 @@ nav {
 	width: 401px;
 	height: 361px;
 	background-size: cover;
-	background-
 	position: center;
 	z-index: 1;
+}
+@media (max-width: 992px) {
+	.board {
+		display: none;
+	}
 }
 .board-content{
 	padding: 60px 30px 0 10px;
 	display: inline-block;
 	text-decoration: none;
+}
+@media (max-width: 992px) {
+	.board-content{
+		display: none;
+	}
 }
 .check{
 	display: inline-block;
