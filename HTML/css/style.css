@@ -1173,14 +1173,7 @@ nav {
 	padding-top: 60px;
 	padding-bottom: 60px;
 }
-@media (max-width: 992px) {
-	#about {
-		background-image: url("../img/backgrounds/maps-b.png");
-		background-position: center;
-		background-size: auto;
-		background-repeat: no-repeat;
-		}
-}
+
 .about-text {
 	margin-top: 20px;
 	padding-right: 60px;
@@ -1252,11 +1245,7 @@ nav {
 	background-position: left;
 	background-size: cover;
 }
-@media (max-width: 992px) {
-	.international {
-		display: none;
-	}
-}
+
 
 /*----- Team -----*/
 #team {
@@ -3870,15 +3859,9 @@ img {
 .highlight{
 	display: inline;
 }
-@media (max-width: 992px) {
-	video {
-		display: none;
-	}
-}
+
 @media (max-width: 992px) {
 	.video-background {
-		background-image: url("../img/backgrounds/cielo.png");
-		background-position: center;
-		background-size: auto;
+
 	}
 }
