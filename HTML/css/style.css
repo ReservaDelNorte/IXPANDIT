@@ -1248,7 +1248,8 @@ nav {
 @media (max-width: 425px) {
 	.international {
 		background-image: url("../img/backgrounds/maps.png");
-		width: 100%;
+		width: 320px;
+		height: 188px;
 		background-position: left;
 		background-size: cover;
 	}
