@@ -1245,6 +1245,15 @@ nav {
 	background-position: left;
 	background-size: cover;
 }
+@media (max-width: 425px) {
+	.international {
+		background-image: url("../img/backgrounds/maps.png");
+		width: 100%;
+		background-position: left;
+		background-size: cover;
+	}
+}
+
 
 
 /*----- Team -----*/
@@ -3858,10 +3867,4 @@ img {
 }
 .highlight{
 	display: inline;
-}
-
-@media (max-width: 992px) {
-	.video-background {
-
-	}
 }
