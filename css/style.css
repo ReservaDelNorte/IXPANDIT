@@ -89,6 +89,17 @@ a:focus, a:active, button::-moz-focus-inner, input[type="reset"]::-moz-focus-inn
 		width: 100%;
 	}
 }
+
+@media (max-width: 768px){
+	video{
+		display: none;
+	}
+	.video-foreground{
+		background-image: url("../img/backgrounds/536.png");
+		background-size: cover;
+		background-position: center;
+	}
+}
 .col-xs-5ths,.col-sm-5ths,.col-md-5ths,.col-lg-5ths {
 	position: relative;
 	min-height: 1px;
