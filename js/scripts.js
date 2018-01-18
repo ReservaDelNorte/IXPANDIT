@@ -1,6 +1,7 @@
-
 (function($) {
 	"use strict";
+
+
 
 	/* -------------------
 	Revolution Sliders
@@ -483,7 +484,18 @@ Portfolio
 			// error
 		});
 	});
+
+	var video = document.getElementById('video_background');
+
+	video.src = "img/backgrounds/bg-home-fullscreen.webm";
+
+	video.load();
+	video.play();
+
+
 })(jQuery, window, document);
+
+
 
 
 /*!

@@ -124,6 +124,19 @@ p {
 	font-weight: 400;
 }
 
+@media (max-width: 768px) {
+		video {
+			display: none;
+	 }
+	 .video-foreground {
+	 	background-image: url("/../img/backgrounds/536.jpg");
+	 	background-size: cover;
+	 	background-position: center;
+	 }
+}
+
+
+
 .section-title {
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -192,13 +205,12 @@ p {
 	bottom:0;
 	background-color:#fff;
 	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 #preloader .loader {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-top: -25px;
-	margin-left: -60px;
 }
 
 /*----- Typography -----*/
@@ -575,6 +587,11 @@ p {
 	background: #fff;
 	background: rgba(255,255,255,.05);
 }
+.tp-caption{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 .tp-caption a {
 	color: #fff;
 	padding: 9px 22px;
@@ -700,7 +717,7 @@ nav {
 }
 .navbar-nav>li>a,
 .navbar-nav>li>span {
-	margin-top: 3px;
+	margin-top: -6px;
 	padding-top: 16px;
 	padding-bottom: 13px;
 }
@@ -774,8 +791,6 @@ nav {
 .navbar-small .navbar-nav>li>a:focus {
 	color: #1c1c1c;
 }
-
-
 
 /*Navbar Collapse*/
 @media (max-width: 992px) {
@@ -933,7 +948,7 @@ nav {
 	position:absolute;
 	opacity: 1;
 	width: 170px;
-	margin-top: 3px;
+	margin-top: -6px;
 	-webkit-transition: all 0.4s ease;
 	-moz-transition: all 0.4s ease;
 	-o-transition: all 0.4s ease;
@@ -1238,24 +1253,6 @@ nav {
 	height: 25px;
 	background-size: cover;
 }
-.international{
-	background-image: url("../img/backgrounds/maps.png");
-	width: 457px;
-	height: 269px;
-	background-position: left;
-	background-size: cover;
-}
-@media (max-width: 425px) {
-	.international {
-		background-image: url("../img/backgrounds/maps.png");
-		width: 320px;
-		height: 188px;
-		background-position: left;
-		background-size: cover;
-	}
-}
-
-
 
 /*----- Team -----*/
 #team {
@@ -3868,4 +3865,8 @@ img {
 }
 .highlight{
 	display: inline;
+}
+img.client{
+	height: 500px;
+	width: auto;
 }
