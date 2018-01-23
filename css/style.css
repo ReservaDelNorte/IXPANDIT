@@ -94,12 +94,16 @@ a:focus, a:active, button::-moz-focus-inner, input[type="reset"]::-moz-focus-inn
 	video{
 		display: none;
 	}
+}
+
+@media (max-width: 768px){
 	.video-foreground{
 		background-image: url("../img/backgrounds/536.png");
 		background-size: cover;
 		background-position: center;
 	}
 }
+
 .col-xs-5ths,.col-sm-5ths,.col-md-5ths,.col-lg-5ths {
 	position: relative;
 	min-height: 1px;
@@ -454,12 +458,12 @@ p {
 }
 @media (min-width:992px) {
 	.home-heading {
-		font-size: 72px;
+		font-size: 30px;
 	}
 }
 @media (min-width:768px) and (max-width:992px) {
 	.home-heading {
-		font-size: 55px;
+		font-size: 30px;
 	}
 }
 @media (max-width:600px) {
