@@ -83,6 +83,12 @@
 		pagination: false,
 		navigation: false
 	});
+	$("#aboutUs").owlCarousel({
+		autoPlay : true,
+		singleItem : true,
+		pagination: true,
+		navigation: false,
+	});
 	$("#owl-testimonials").owlCarousel({
 		autoPlay : true,
 		singleItem : true,
