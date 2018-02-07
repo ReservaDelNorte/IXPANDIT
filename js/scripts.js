@@ -497,14 +497,48 @@ Portfolio
 
 	video.load();
 	video.play();
-
+	var vid = document.getElementById("myVideo");
+	vid.playbackRate = 0.2;
 
 })(jQuery, window, document);
 
+/*------------ VIDEO -------------*/
+
+function fade(element) {
+    var op = 0; // initial opacity
+    var timer = setInterval(function() {
+        if (op <= 0.1) {
+            clearInterval(timer);
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op -= op * 0.1;
+    }, 20);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() {
+        var backgroundCover = document.getElementsByClassName('black')[0];
+        fade(backgroundCover);
+    }, 3000);
+}, false);
+
+$(".video_background").ionRangeSlider({
+    grid: true,
+    min: -2,
+    max: 2,
+    step: 0.5,
+    onFinish: function (data) {
+        var vid = document.getElementById("myVideo");
+        vid.playbackRate = data.from;
+    }
+});
 
 
 
-/*!
+/*
  * Vossen Hero YT v2.0
- */
 function onYouTubeIframeAPIReady(){player=new YT.Player("vossen-youtube",{width:$(window).width()+0,height:$(window).height()+0,videoId:vosVideoId,playerVars:{controls:0,showinfo:0},events:{onReady:onPlayerReady,onStateChange:onPlayerStateChange}})}function playToggle(){player.playVideo(),document.getElementById("play-toggle").innerHTML='<i class="ion-pause"></i>'}function pauseToggle(){player.pauseVideo(),document.getElementById("play-toggle").innerHTML='<i class="ion-play"></i>'}function vosResize(){var a=$(window).width()+0,b=$(window).height()+0;a/b>16/9?(player.setSize(a,a/16*9),$("#vossen-youtube").css({left:"50%"})):(player.setSize(b/9*16,b),$("#vossen-youtube").css({left:-($("#vossen-youtube").outerWidth()-a)/2}))}function onPlayerReady(){var a=/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Windows Phone/i.test(navigator.userAgent);a?$("#play-toggle").on("click",function(){playToggle()}):playToggle(),player.mute(),vosResize(),$(window).on("resize",function(){vosResize()})}function onPlayerStateChange(a){$("#mute-toggle").on("click",function(){$(this);player.isMuted()?(player.unMute(),document.getElementById("mute-toggle").innerHTML='<i class="ion-android-volume-up"></i>'):(player.mute(),document.getElementById("mute-toggle").innerHTML='<i class="ion-android-volume-mute"></i>')}),a.data==YT.PlayerState.ENDED&&player.playVideo(),$("#play-toggle").on("click",function(){a.data==YT.PlayerState.PLAYING?pauseToggle():a.data==YT.PlayerState.PAUSED&&playToggle()})}if($("#vossen-youtube").length){var tag=document.createElement("script");tag.src="https://www.youtube.com/iframe_api";var firstScriptTag=document.getElementsByTagName("script")[0];firstScriptTag.parentNode.insertBefore(tag,firstScriptTag);var vosVideoId=$("#vossen-youtube").attr("data-youtube-video-id"),player}
+
+*/
