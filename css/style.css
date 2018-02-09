@@ -77,6 +77,23 @@ a:focus, a:active, button::-moz-focus-inner, input[type="reset"]::-moz-focus-inn
 	border: 0;
 	outline : 0;
 }
+
+#preloader {
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fff;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#preloader .loader {
+	position: absolute;
+}
+
 @media only screen and (min-width: 1200px) {
 	.container {
 		max-width: 1425px;
@@ -199,19 +216,18 @@ p {
 }
 
 /* Preloader */
-#preloader {
-	position:fixed;
+#ixpandit {
+	position:absolute;
 	top:0;
 	left:0;
 	right:0;
 	bottom:0;
-	background-color:#fff;
 	z-index: 9999;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-#preloader .loader {
+#ixpandit .logo-home {
 	position: absolute;
 }
 
@@ -442,21 +458,6 @@ p {
 	margin-top: 80px;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-/* Preloader */
-#ixpandit-logo {
-	width: 100%!important;
-	height: auto!important;
-	display: block;
-	top:0;
-	left:0;
-	right:0;
-	bottom:0;
-	z-index: 9999;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 #home-parallax-fullwidth .home-title {
