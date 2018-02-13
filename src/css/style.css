@@ -556,7 +556,7 @@ p {
 #home-revolution-slider  {
 	width: 98%;
 	height: 100%;
-	min-height: 100%;
+	max-height: 100%;
 }
 .hero {
 	position: fixed;
@@ -566,6 +566,8 @@ p {
 	left: 0;
 	right: 0;
 	background-size: cover;
+	height: 100%;
+	max-height: 100%;
 }
 .content {
 	position: relative;
@@ -603,6 +605,9 @@ p {
 	padding:0;
 	margin-top: 0;
 	z-index: -1;
+    max-height: 100%;
+    height: 100%;
+    overflow: visible;
 }
 .tparrows.preview4:after {
 	background: #fff;
@@ -634,6 +639,8 @@ p {
 }
 .tp-banner-video video {
 	min-width: 100%;
+    max-height: 100%;
+    height: 100%;
 }
 
 /*----- Header -----*/
@@ -983,7 +990,7 @@ nav {
 
 @media (max-width: 768px) {
    .navbar-collapse {
-	  max-height: none;
+	  max-height: 100%;
 	  overflow-x: hidden;
    }
 }
