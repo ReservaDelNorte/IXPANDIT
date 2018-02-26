@@ -1,6 +1,15 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 
+ 
+gulp.task('scripts', function() {
+  return gulp.src(['./resources/**/*'])
+    .pipe(builder({
+        version: 'v0.9.2',
+        platforms: ['win64']
+     }));
+});
+
 // Configure the browserSync task
 gulp.task('browserSync', function() {
   browserSync.init({
