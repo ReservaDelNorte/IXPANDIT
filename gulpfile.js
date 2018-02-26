@@ -1,5 +1,7 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
+var gulp = require('gulp'),
+		browserSync = require('browser-sync').create(),
+		prefixer = require('gulp-autoprefixer'),
+		runSeq = require('run-sequence');
 
  
 gulp.task('scripts', function() {
@@ -14,7 +16,7 @@ gulp.task('scripts', function() {
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-    	baseDir: 'src',
+    	baseDir: 'dist',
     	serveStaticOptions: {
         	extensions: ["html"]
     	}
@@ -26,7 +28,9 @@ gulp.task('browserSync', function() {
 gulp.task('live', ['html','css','js','assets']);
 
 gulp.task('css', function(){
+
 	gulp.src(['src/css/**/*.css'])
+		.pipe(prefixer())
 		.pipe(gulp.dest('dist/css/'));
 });
 
@@ -55,7 +59,9 @@ gulp.task('assets', function(){
 
 // Dev task with browserSync
 gulp.task('dev', ['browserSync'], function() {
-  gulp.watch('src/css/*.css', browserSync.reload);
+  gulp.watch('src/css/*.css', function(){
+		runSeq('css', browserSync.reload);
+	});
   gulp.watch('src/*.html', browserSync.reload);
   gulp.watch(['src/js/**/*.js','src/js/*.js'], browserSync.reload);
 });
