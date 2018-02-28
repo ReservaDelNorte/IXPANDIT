@@ -90,7 +90,7 @@
 		navigation: false,
 	});
 	$("#owl-testimonials").owlCarousel({
-		autoPlay : true,
+		autoPlay : false,
 		singleItem : true,
 		pagination: true,
 		navigation: false,
@@ -123,7 +123,7 @@
 		$('.parallax-section-4').parallax("50%", 0.5);
 		$('.parallax-section-5').parallax("50%", 0.5);
 		$('.parallax-section-6').parallax("50%", 0.5);
-		$('.parallax-section-7').parallax("50%", 0.5);
+//		$('.parallax-section-7').parallax("50%", 0.5);
 		$('.parallax-section-8').parallax("50%", 0.5);
 		$('#home-landing').parallax("50%", 0.5);
 
