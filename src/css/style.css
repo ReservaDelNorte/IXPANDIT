@@ -120,7 +120,7 @@ h4 {
 }
 p {
 	color: #7a7a7a;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 20px;
 	font-weight: 400;
 }
@@ -284,9 +284,22 @@ p {
 .parallax-section-4,
 .parallax-section-5,
 .parallax-section-6,
-.parallax-section-7,
 .parallax-section-8 {
 	background-position: 50% 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	height: auto;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	vertical-align: middle;
+	z-index: 1;
+	display: block;
+	position: relative;
+}
+.parallax-section-7{
+	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -656,6 +669,7 @@ nav {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	transition: all 0.4s ease;
+	width: auto;
 }
 .navbar-alt .navbar-right {
 	margin-top: 35px;
@@ -980,7 +994,7 @@ nav {
 @media (max-width: 992px) {
 	.dropdown-menu {
 		float: none;
-		position: static;
+		position: static ;
 		background-color: transparent;
 		box-shadow: none;
 		border: none;
