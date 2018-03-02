@@ -9,7 +9,7 @@ jobs:
       - run: sudo apt-get install python-dev
       - run: curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
       - run: sudo python get-pip.py
-      - run: pip install awscli --upgrade
+      - run: pip install --upgrade --user awscli
       - run: export PATH=~/.local/bin:$PATH
       - restore_cache:
           keys:
