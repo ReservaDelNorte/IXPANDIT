@@ -6,7 +6,7 @@ sourcemaps = require('gulp-sourcemaps'),
 cleanCSS = require('gulp-clean-css'),
 stylefmt = require('gulp-stylefmt')
 
- 
+
 gulp.task('scripts', function() {
   return gulp.src(['./resources/**/*'])
     .pipe(builder({
@@ -47,8 +47,12 @@ gulp.task('js', function(){
 });
 
 gulp.task('html', function(){
-	return gulp.src(['src/*.html'])
+	gulp.src(['src/index.html'])
 	.pipe(gulp.dest('dist/'));
+
+	return gulp.src(['src/index_en.html'])
+		.pipe(gulp.dest('dist/en'));
+
 });
 
 gulp.task('assets', function(){
