@@ -48,12 +48,9 @@ gulp.task('js', function(){
 });
 
 gulp.task('html', function(){
-	gulp.src(['src/index.html'])
+	return gulp.src(['src/*.html'])
 	.pipe(gulp.dest('dist/'));
 
-	return gulp.src(['src/index_en.html'])
-		.pipe(rename('en'))
-		.pipe(gulp.dest('dist/'));
 
 });
 
