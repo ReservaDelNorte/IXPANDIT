@@ -23,4 +23,4 @@ jobs:
             - ./node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: ~/.local/bin/aws s3 sync dist s3://ixpandit/ --delete --acl public-read
-      - run: ~/.local/bin/aws s3 cp s3://ixpandit/index_en.html s3://ixpandit/en --content-type 'text/html' --delete --acl public-read
+      - run: ~/.local/bin/aws s3 cp s3://ixpandit/index_en.html s3://ixpandit/en --content-type 'text/html' --acl public-read
