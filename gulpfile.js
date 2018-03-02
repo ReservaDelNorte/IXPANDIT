@@ -4,7 +4,8 @@ prefixer = require('gulp-autoprefixer'),
 runSeq = require('run-sequence'),
 sourcemaps = require('gulp-sourcemaps'),
 cleanCSS = require('gulp-clean-css'),
-stylefmt = require('gulp-stylefmt')
+stylefmt = require('gulp-stylefmt'),
+rename = require('gulp-rename');
 
 
 gulp.task('scripts', function() {
@@ -51,7 +52,8 @@ gulp.task('html', function(){
 	.pipe(gulp.dest('dist/'));
 
 	return gulp.src(['src/index_en.html'])
-		.pipe(gulp.dest('dist/en'));
+		.pipe(rename('en'))
+		.pipe(gulp.dest('dist/'));
 
 });
 
