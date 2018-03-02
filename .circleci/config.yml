@@ -9,8 +9,7 @@ jobs:
       - run: sudo apt-get install python-dev
       - run: curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
       - run: sudo python get-pip.py
-      - run: pip install --upgrade --user awscli
-      - run: pip install --upgrade --user awsebcli
+      - run: pip install awscli --upgrade
       - run: export PATH=~/.local/bin:$PATH
       - restore_cache:
           keys:
@@ -18,9 +17,10 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-      - run: npm install
+      - run: npm install -g gulp && npm install
+      - run: gulp live
       - save_cache:
           paths:
             - ./node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: aws s3 sync dist s3://ixpandit/ --delete
+      - run: aws s3 sync dist s3://ixpandit/ --delete --acl public-read
