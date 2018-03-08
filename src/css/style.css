@@ -1321,6 +1321,15 @@ nav {
 	font-size: 13px;
 	margin-top: 3px;
 }
+.counter2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 65px;
+	font-weight: 700;
+	letter-spacing: 0px;
+	margin: 0;
+	line-height: 65px;
+}
+
 .counter {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 65px;
