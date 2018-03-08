@@ -8,8 +8,8 @@
 @import "cubeportfolio.min.css";
 
 /*----- Fonts -----*/
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300);
 @import "simple-line-icons.css";
 @import "ionicons.min.css";
 
@@ -560,7 +560,7 @@ p {
 .tp-loader.spinner1 {
 	width: 40px;
 	height: 40px;
-	background: url(../img/assets/rev-loader.GIF) no-repeat center center;
+	background: url(../img/assets/rev-loader.gif) no-repeat center center;
 	background-color: transparent;
 	box-shadow:  none;
 	margin-top: -20px;

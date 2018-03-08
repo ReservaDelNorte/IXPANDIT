@@ -61,7 +61,7 @@ gulp.task('assets', function(){
 	gulp.src(['src/img/**/*.gif','src/img/**/*.png','src/img/**/*.jpg'])
 	.pipe(gulp.dest('dist/img/'));
 
-	return gulp.src(['src/img/**/*.webm'])
+	return gulp.src(['src/img/**/*.webm','src/img/**/*.mp4'])
 	.pipe(gulp.dest('dist/img'));
 });
 
