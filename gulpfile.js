@@ -4,9 +4,10 @@ prefixer = require('gulp-autoprefixer'),
 runSeq = require('run-sequence'),
 sourcemaps = require('gulp-sourcemaps'),
 cleanCSS = require('gulp-clean-css'),
-stylefmt = require('gulp-stylefmt')
+stylefmt = require('gulp-stylefmt'),
+rename = require('gulp-rename');
 
- 
+
 gulp.task('scripts', function() {
   return gulp.src(['./resources/**/*'])
     .pipe(builder({
@@ -49,6 +50,8 @@ gulp.task('js', function(){
 gulp.task('html', function(){
 	return gulp.src(['src/*.html'])
 	.pipe(gulp.dest('dist/'));
+
+
 });
 
 gulp.task('assets', function(){
@@ -58,7 +61,7 @@ gulp.task('assets', function(){
 	gulp.src(['src/img/**/*.gif','src/img/**/*.png','src/img/**/*.jpg'])
 	.pipe(gulp.dest('dist/img/'));
 
-	return gulp.src(['src/img/**/*.webm'])
+	return gulp.src(['src/img/**/*.webm','src/img/**/*.mp4'])
 	.pipe(gulp.dest('dist/img'));
 });
 

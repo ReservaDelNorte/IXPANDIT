@@ -492,13 +492,10 @@ Portfolio
 	});
 
 	var video = document.getElementById('video_background');
-
-	video.src = "img/backgrounds/bg-home-fullscreen.webm";
-
 	video.load();
 	video.play();
-	var vid = document.getElementById("myVideo");
-	vid.playbackRate = 0.2;
+
+	video.playbackRate = 0.7;
 
 })(jQuery, window, document);
 

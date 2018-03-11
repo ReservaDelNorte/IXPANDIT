@@ -10,17 +10,18 @@ jobs:
       - run: curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
       - run: sudo python get-pip.py
       - run: pip install --upgrade --user awscli
-      - run: pip install --upgrade --user awsebcli
       - run: export PATH=~/.local/bin:$PATH
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
-
-      - run: npm install
+      - run: sudo npm install -g gulp && npm install
+      - run: gulp live
       - save_cache:
           paths:
             - ./node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: ~/.local/bin/eb deploy
+      - run: ~/.local/bin/aws s3 sync dist s3://www.ixpandit.com/ --delete --acl public-read
+      - run: ~/.local/bin/aws s3 cp s3://www.ixpandit.com/index_en.html s3://www.ixpandit.com/en --content-type 'text/html' --acl public-read
+      - run: ~/.local/bin/aws s3 sync s3://www.ixpandit.com s3://ixpandit.com
