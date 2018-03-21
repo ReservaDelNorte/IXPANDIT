@@ -229,6 +229,11 @@ p {
 .white {
 	color: #fff;
 }
+.description{
+    font-size: 20px;
+    margin: 20px 0;
+		line-height: 30px;
+}
 .grey {
 	color: #666;
 }
@@ -253,6 +258,7 @@ p {
 	background: url(../img/backgrounds/bg-home-fullscreen.mp4);
 }
 .parallax-section-1 {
+	background-image: url('../img/backgrounds/maps.png');
 }
 .parallax-section-2 {
 	background-image: url(../img/backgrounds/bg-2.jpg);
@@ -276,6 +282,7 @@ p {
 	background-image: url(../img/backgrounds/bg-8.jpg);
 }
 
+
 /*----- Home Sections -----*/
 #home-parallax-fullscreen,
 .parallax-section-1,
@@ -290,7 +297,7 @@ p {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	width: 100%;
-	height: auto;
+	height: 50%;
 	overflow-x: hidden;
 	overflow-y: hidden;
 	vertical-align: middle;
@@ -326,17 +333,28 @@ p {
 	z-index: 1;
 }
 @media (min-width:768px) {
+	.map-mobile{
+		display: none;
+	}
 	#home-parallax-fullwidth {
 		height: 600px;
 	}
 }
 @media (max-width:768px) {
+	#about{
+		height: 700px!important;
+	}
+	.parallax-section-1{
+		background-image: none;
+	}
+	.map-mobile{
+		display: block;
+	}
 	#home-parallax-fullwidth {
 		height: 400px;
 	}
 }
 #home-parallax-fullscreen:after,
-.parallax-section-1:after,
 .parallax-section-2:after,
 .parallax-section-3:after,
 .parallax-section-4:after,
@@ -1134,11 +1152,7 @@ nav {
 #about {
 	padding-top: 60px;
 	padding-bottom: 60px;
-}
-
-.about-text {
-	margin-top: 20px;
-	padding-right: 60px;
+	height: 400px;
 }
 #about p {
 	line-height: 1.8;
@@ -1321,6 +1335,10 @@ nav {
 	font-size: 13px;
 	margin-top: 3px;
 }
+.fact{
+    margin-top: 10%;
+}
+
 .counter2 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 65px;
@@ -1412,6 +1430,50 @@ blockquote strong {
 
 
 /*----- Portfolio -----*/
+.contenedor-box{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.grouit{
+	margin: 40px 20px;
+	background-image: url('../img/clients/grouit.png');
+	width: 290px;
+  height: 230px;
+	background-size: cover;
+	background-position: center;
+}
+.creditosenelacto{
+	margin:40px 20px;
+	background-image: url('../img/clients/creditos.jpg');
+	width: 290px;
+  height: 230px;
+	background-size: cover;
+	background-position: center;
+}
+.adelantosya{
+	margin: 40px 20px;
+	background-image: url('../img/clients/adelantos.png');
+	width: 290px;
+  height: 230px;
+	background-size: cover;
+	background-position: center;
+}
+.contenido{
+	width: 290px;
+  height: 230px;
+	background-color: rgba(0,0,0,0.9);
+	-webkit-transition: opacity 0.2s;
+	-mos-transition: opacity 0.2s;
+	opacity: 0;
+}
+.grouit:hover .contenido,
+.adelantosya:hover .contenido,
+.creditosenelacto:hover .contenido{
+	opacity: 1;
+}
+
 #portfolio {
 	padding-top: 60px;
 	padding-bottom: 100px;
@@ -3613,6 +3675,7 @@ img {
 }
 .highlight{
 	display: inline;
+	font-size: 30px;
 }
 img.client{
 	height: 500px;
