@@ -1152,7 +1152,7 @@ nav {
 #about {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	height: 400px;
+	height: 600px;
 }
 #about p {
 	line-height: 1.8;
@@ -1437,7 +1437,7 @@ blockquote strong {
 	justify-content: center;
 }
 .grouit{
-	margin: 40px 20px;
+	margin: 40px 0px;
 	background-image: url('../img/clients/grouit.png');
 	width: 290px;
   height: 230px;
@@ -1445,7 +1445,7 @@ blockquote strong {
 	background-position: center;
 }
 .creditosenelacto{
-	margin:40px 20px;
+	margin:40px 0px;
 	background-image: url('../img/clients/creditos.jpg');
 	width: 290px;
   height: 230px;
@@ -1473,6 +1473,12 @@ blockquote strong {
 .creditosenelacto:hover .contenido{
 	opacity: 1;
 }
+
+a:active, a:hover, a:focus {
+    outline: 0;
+    color: #fff;
+    text-decoration: none;
+	}
 
 #portfolio {
 	padding-top: 60px;
