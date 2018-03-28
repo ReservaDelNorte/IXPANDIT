@@ -354,23 +354,7 @@ p {
 		height: 400px;
 	}
 }
-#home-parallax-fullscreen:after,
-.parallax-section-2:after,
-.parallax-section-3:after,
-.parallax-section-4:after,
-.parallax-section-6:after,
-.parallax-section-7:after,
-.parallax-section-8:after,
-#hero:after {
-	content: "";
-	position: absolute;
-	background: url(../img/assets/dot-pattern.png) repeat;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	z-index: -1;
-}
+
 #video_background {
 	position: absolute;
 	bottom: 0px;
