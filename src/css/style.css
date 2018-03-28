@@ -1294,17 +1294,6 @@ nav {
   opacity: 0;
   transition: all 0.3s;
 }
-/*----- Fun Facts -----*/
-#fun-facts {
-	display: table;
-	width: 100%;
-	z-index: 1;
-	margin-bottom: 30px;
-}
-.fact-container {
-	padding-top:40px;
-	padding-bottom:30px;
-}
 .fact h2 {
 	font-size: 65px;
 	letter-spacing: 0px;
